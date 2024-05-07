@@ -11,6 +11,12 @@ const config: Config = {
 			fontFamily: {
 				elegante: ['var(--font-elegante)'],
 			},
+			colors: {
+				'golden-hour': {
+					white: '#faf9f4',
+					gold: '#ac9654',
+				},
+			},
 		},
 	},
 	plugins: [],

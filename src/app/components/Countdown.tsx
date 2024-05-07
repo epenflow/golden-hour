@@ -1,4 +1,7 @@
+'use client';
 import React from 'react';
+import useCountdown from '../utils/hooks/useCountdown';
+import dynamic from 'next/dynamic';
 type ShowCounter = {
 	value: number;
 	type:
@@ -13,33 +16,36 @@ type ShowCounter = {
 };
 const ShowCounter = ({ value, type }: ShowCounter) => {
 	return (
-		<div className='flex flex-col w-20 items-center uppercase'>
-			<span>{value}</span>
-			<span>{type}</span>
+		<div className='flex flex-col w-20 items-center uppercase justify-center'>
+			<span className='font-elegante text-2xl'>{value}</span>
+			<span className='font-serif capitalize'>{type}</span>
 		</div>
 	);
 };
 const Countdown = () => {
+	const [days, hours, minutes, seconds] = useCountdown('20 may 2024');
 	return (
 		<div className='flex flex-row'>
 			<ShowCounter
-				value={15}
+				value={days}
 				type='days'
 			/>
 			<ShowCounter
-				value={16}
+				value={hours}
 				type='hours'
 			/>
 			<ShowCounter
-				value={30}
+				value={minutes}
 				type='minutes'
 			/>
 			<ShowCounter
-				value={20}
+				value={seconds}
 				type='seconds'
 			/>
 		</div>
 	);
 };
 
-export default Countdown;
+export default dynamic(() => Promise.resolve(Countdown), {
+	ssr: false,
+});
