@@ -11,6 +11,14 @@ const Loader = () => {
 	function handleClick() {
 		setLoader((prev) => !prev);
 	}
+	React.useEffect(() => {
+		if (isLoader) {
+			document.body.style.overflow = 'hidden';
+		}
+		return () => {
+			document.body.style.overflow = 'unset';
+		};
+	}, [isLoader]);
 	return !isLoader ? (
 		<section className='fixed top-0 z-50 h-screen w-screen px-4 py-20 bg-golden-hour-white flex justify-between flex-col items-center'>
 			<div className='flex flex-col gap-2 items-center'>
