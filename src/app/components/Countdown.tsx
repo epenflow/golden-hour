@@ -23,9 +23,9 @@ const ShowCounter = ({ value, type }: ShowCounter) => {
 	);
 };
 const Countdown = () => {
-	const [days, hours, minutes, seconds] = useCountdown('20 may 2024');
+	const [days, hours, minutes, seconds] = useCountdown('30 may 2024');
 	return (
-		<div className='flex flex-row'>
+		<div className='flex flex-row border-b-[1px] border-solid border-golden-hour-gold'>
 			<ShowCounter
 				value={days}
 				type='days'
