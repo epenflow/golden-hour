@@ -12,7 +12,7 @@ const Loader = () => {
 		setLoader((prev) => !prev);
 	}
 	return !isLoader ? (
-		<section className='fixed top-0 z-50 h-screen w-screen px-4 py-10 bg-golden-hour-white flex justify-between flex-col items-center'>
+		<section className='fixed top-0 z-50 h-screen w-screen px-4 py-20 bg-golden-hour-white flex justify-between flex-col items-center'>
 			<div className='flex flex-col gap-2 items-center'>
 				<h1 className='font-serif uppercase'>wedding invitation</h1>
 				<h1 className='text-3xl capitalize font-elegante'>
