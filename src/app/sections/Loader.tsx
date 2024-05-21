@@ -12,7 +12,7 @@ const Loader = () => {
 		setLoader((prev) => !prev);
 	}
 	React.useEffect(() => {
-		if (isLoader) {
+		if (!isLoader) {
 			document.body.style.overflow = 'hidden';
 		}
 		return () => {

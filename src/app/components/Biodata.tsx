@@ -1,5 +1,5 @@
 import React from 'react';
-type Fullname = {
+type Biodata = {
 	nickname: string;
 	fullName: string;
 	address: string;
@@ -7,13 +7,13 @@ type Fullname = {
 	motherName: string;
 	familyOrder: string;
 };
-const Fullname = ({
+const Biodata = ({
 	fullName,
 	fatherName,
 	familyOrder,
 	motherName,
 	address,
-}: Fullname) => {
+}: Biodata) => {
 	return (
 		<div className='flex flex-col items-center font-serif lg:text-xl text-center'>
 			<h1 className='text-2xl lg:text-4xl uppercase'>{fullName}</h1>
@@ -26,4 +26,4 @@ const Fullname = ({
 	);
 };
 
-export default Fullname;
+export default Biodata;

@@ -22,16 +22,16 @@ const BRIDE_BIODATA: Biodata = {
 	fatherName: 'i made suparyana',
 	familyOrder: 'Anak kedua',
 };
-type PlaceAndTime = {
+type PREPOSITION = {
 	date: string;
 	time: string;
 	address: string;
 	addressLink: string;
 };
-const PLACEANDTIME_TEXT: PlaceAndTime = {
+const PREPOSITION: PREPOSITION = {
 	time: 'Pukul : 11.30 WITA - Selesai',
 	date: 'kamis, 10 mei 2024',
 	addressLink: '#',
 	address: 'Bertempat di Br. Dajan Peken, Desa Timpag, Kerambitan, Tabanan',
 };
-export { GROOM_BIODATA, BRIDE_BIODATA, PLACEANDTIME_TEXT };
+export { GROOM_BIODATA, BRIDE_BIODATA, PREPOSITION };
