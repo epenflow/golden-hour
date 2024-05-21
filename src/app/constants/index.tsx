@@ -31,7 +31,8 @@ type PREPOSITION = {
 const PREPOSITION: PREPOSITION = {
 	time: 'Pukul : 10.00 WITA - Selesai',
 	date: 'sabtu, 25 juni 2024',
-	addressLink: '#',
+	addressLink:
+		'https://www.google.com/maps/place/Dava+Villa+Ocean+View/@-8.6837996,115.4861449,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd2726fcc53cb1b:0x8cfe9bfe33728928!8m2!3d-8.6837996!4d115.4861449!16s%2Fg%2F11g03mgqtl?entry=ttu',
 	address:
 		'Bertempat di Toyapakeh, Nusa Penida, Klungkung, Bali (Dava Villa Ocean View)',
 };
