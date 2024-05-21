@@ -2,6 +2,7 @@
 import React from 'react';
 import useCountdown from '../utils/hooks/useCountdown';
 import dynamic from 'next/dynamic';
+import { PREPOSITION } from '../constants';
 type ShowCounter = {
 	value: number;
 	type:
@@ -23,7 +24,7 @@ const ShowCounter = ({ value, type }: ShowCounter) => {
 	);
 };
 const Countdown = () => {
-	const [days, hours, minutes, seconds] = useCountdown('30 may 2024');
+	const [days, hours, minutes, seconds] = useCountdown(`${PREPOSITION.date}`);
 	return (
 		<div className='flex flex-row border-[1px] border-solid border-golden-hour-gold p-2'>
 			<ShowCounter
