@@ -28,22 +28,39 @@ const Loader = () => {
 						transition: { duration: 1.5, ease: 'linear' },
 					}}
 					className='fixed top-0 z-50 h-screen w-screen px-4 py-20 bg-golden-hour-white flex justify-between flex-col items-center'>
-					<div className='flex flex-col gap-2 items-center'>
+					<motion.div
+						initial={{ opacity: 0, y: -100 }}
+						animate={{ opacity: 100, y: 0 }}
+						transition={{ duration: 0.5, ease: 'easeIn' }}
+						className='flex flex-col gap-2 items-center'>
 						<h1 className='font-serif uppercase'>
 							wedding invitation
 						</h1>
 						<h1 className='text-3xl capitalize font-elegante'>
 							{GROOM_BIODATA.nickname} & {BRIDE_BIODATA.nickname}
 						</h1>
-					</div>
-					<Image
-						src={'/wedding ring.png'}
-						alt='wedding ring'
-						width={320}
-						height={320}
-						className='m-auto'
-					/>
-					<div className='flex flex-col lg:w-1/2'>
+					</motion.div>
+					<motion.div
+						initial={{ scale: 0 }}
+						animate={{ scale: 1 }}
+						transition={{
+							duration: 0.5,
+							ease: 'easeIn',
+							delay: 0.25,
+						}}>
+						<Image
+							src={'/wedding ring.png'}
+							alt='wedding ring'
+							width={320}
+							height={320}
+							className='m-auto'
+						/>
+					</motion.div>
+					<motion.div
+						initial={{ y: 100, opacity: 0 }}
+						animate={{ y: 0, opacity: 100 }}
+						transition={{ ease: 'easeIn', duration: 0.5 }}
+						className='flex flex-col lg:w-1/2'>
 						<h1 className='text-start'>Kepada :</h1>
 						<h1>Bapak/Ibu/Saudara/I</h1>
 						<h1 className='capitalize border-b-[1px] border-b-golden-hour-gold border-t-[1px] border-t-golden-hour-gold py-2'>
@@ -58,7 +75,7 @@ const Loader = () => {
 							onClick={handleClick}>
 							buka undangan
 						</button>
-					</div>
+					</motion.div>
 				</motion.section>
 			) : null}
 		</AnimatePresence>
