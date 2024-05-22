@@ -4,7 +4,7 @@ import Preposition from '../components/Preposition';
 import Image from 'next/image';
 const Main = () => {
 	return (
-		<section className='h-screen w-screen bg-golden-hour-white px-4 py-5 flex flex-col items-center gap-3 justify-between relative'>
+		<section className='w-screen bg-golden-hour-white px-4 py-5 flex flex-col items-center gap-3 relative'>
 			<div className='flex flex-col items-center z-20'>
 				<h1 className='capitalize text-4xl font-elegante'>
 					om swastiastu

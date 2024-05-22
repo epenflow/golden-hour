@@ -18,8 +18,8 @@ const BRIDE_BIODATA: Biodata = {
 	nickname: 'Ayu',
 	fullName: 'ayu purnama ningsih S.M',
 	address: 'dusun gaga, tamanbali, bangli (griya nataran tamanbali)',
-	motherName: 'ida pandita mpu wiradnyanananda',
-	fatherName: 'ida pandita mpu stri wiradnyanananda ',
+	motherName: 'ida pandita mpu stri wiradnyanananda',
+	fatherName: 'ida pandita mpu wiradnyanananda',
 	familyOrder: 'Putri pertama',
 };
 type PREPOSITION = {
