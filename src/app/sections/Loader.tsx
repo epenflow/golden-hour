@@ -60,7 +60,7 @@ const Loader = () => {
 					<div
 						className='h-screen w-screen absolute top-0 left-0'
 						style={{
-							backgroundImage: `url("/RV_04170.jpg")`,
+							backgroundImage: `url("/RV_04170.JPG")`,
 							backgroundSize: 'cover',
 							backgroundRepeat: 'no-repeat',
 							backgroundPosition: 'center',

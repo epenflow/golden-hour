@@ -13,6 +13,9 @@ export const metadata: Metadata = {
 			url: '/WEDDING ICON.svg',
 		},
 	},
+	openGraph: {
+		images: '/RV_04170.JPG',
+	},
 };
 
 export default function RootLayout({
