@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 			url: '/WEDDING ICON.svg',
 		},
 	},
+	metadataBase: new URL('https://golden-hour-nine.vercel.app/'),
+	alternates: {
+		canonical: '/',
+		languages: {
+			'en-US': '/en-US',
+			'de-DE': '/de-DE',
+		},
+	},
 	openGraph: {
 		title: `The Wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 		description: `You are invited to the wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
