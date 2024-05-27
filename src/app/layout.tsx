@@ -15,6 +15,8 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		images: '/RV_04170.JPG',
+		title: `${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
+		description: `The Wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 	},
 };
 
