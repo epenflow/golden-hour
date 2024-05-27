@@ -4,7 +4,6 @@ import './globals.css';
 import { elegante } from './constants/fonts';
 import { BRIDE_BIODATA, GROOM_BIODATA } from './constants';
 const inter = Inter({ subsets: ['latin'] });
-import RV from './public/RV_04170.JPG';
 export const metadata: Metadata = {
 	metadataBase: new URL('https://golden-hour-nine.vercel.app/'),
 
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		images: [
 			{
-				url: RV.src,
+				url: '/RV_04170.JPG',
 				width: 800,
 				height: 600,
 			},
