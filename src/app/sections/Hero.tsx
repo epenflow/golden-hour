@@ -11,7 +11,7 @@ const Hero = () => {
 	return (
 		<AnimatePresence>
 			{isLoader ? (
-				<section className='flex flex-col items-center px-3 py-10 gap-3 h-screen w-screen bg-golden-hour-white justify-between relative'>
+				<section className='flex flex-col items-center px-3 py-10 gap-3 h-screen w-screen bg-green-900 justify-between relative'>
 					<motion.h1
 						initial={{ y: -250, opacity: 0 }}
 						animate={{
@@ -19,7 +19,7 @@ const Hero = () => {
 							y: 0,
 							transition: { delay: 1.5, duration: 1 },
 						}}
-						className='text-3xl capitalize font-serif z-30'>
+						className='text-3xl capitalize font-serif z-30 text-golden-hour-gold'>
 						pawiwahan
 					</motion.h1>
 					<motion.div
@@ -81,7 +81,7 @@ const Hero = () => {
 							opacity: 100,
 							transition: { delay: 1, duration: 1.5 },
 						}}
-						className='text-3xl capitalize font-elegante z-30'>
+						className='text-3xl capitalize font-elegante z-30 text-golden-hour-gold'>
 						{GROOM_BIODATA.nickname} & {BRIDE_BIODATA.nickname}
 					</motion.h1>
 					<motion.p
