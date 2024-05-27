@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaMapLocationDot } from 'react-icons/fa6';
 const Preposition = () => {
 	return (
-		<div className='flex flex-col w-full lg:w-1/2 font-serif p-2 border-[1px] border-solid border-golden-hour-gold text-lg'>
+		<div className='flex flex-col w-full lg:w-1/2 font-serif p-2 border-[1px] border-solid border-golden-hour-gold text-lg bg-golden-hour-white'>
 			<span className='bg-golden-hour-gold text-golden-hour-white p-2 text-center text-xl uppercase font-elegante'>
 				save the date
 			</span>
