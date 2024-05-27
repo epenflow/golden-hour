@@ -33,7 +33,7 @@ const Loader = () => {
 						initial={{ opacity: 0, y: -100 }}
 						animate={{ opacity: 100, y: 0 }}
 						transition={{ duration: 0.5, ease: 'easeIn' }}
-						className='flex flex-col gap-2 items-center'>
+						className='flex flex-col gap-2 items-center z-30'>
 						<h1 className='font-serif uppercase'>
 							wedding invitation
 						</h1>
@@ -41,7 +41,7 @@ const Loader = () => {
 							{GROOM_BIODATA.nickname} & {BRIDE_BIODATA.nickname}
 						</h1>
 					</motion.div>
-					<motion.div
+					{/* <motion.div
 						initial={{ scale: 0 }}
 						animate={{ scale: 1 }}
 						transition={{
@@ -56,12 +56,20 @@ const Loader = () => {
 							height={320}
 							className='m-auto'
 						/>
-					</motion.div>
+					</motion.div> */}
+					<div
+						className='h-screen w-screen absolute top-0 left-0'
+						style={{
+							backgroundImage: `url("/RV_04170.jpg")`,
+							backgroundSize: 'cover',
+							backgroundRepeat: 'no-repeat',
+							backgroundPosition: 'center',
+						}}></div>
 					<motion.div
 						initial={{ y: 100, opacity: 0 }}
 						animate={{ y: 0, opacity: 100 }}
 						transition={{ ease: 'easeIn', duration: 0.5 }}
-						className='flex flex-col lg:w-1/2'>
+						className='flex flex-col lg:w-1/2 z-30 bg-golden-hour-white p-2'>
 						<h1 className='text-start'>Kepada :</h1>
 						<h1>Bapak/Ibu/Saudara/I</h1>
 						<h1 className='capitalize border-b-[1px] border-b-golden-hour-gold border-t-[1px] border-t-golden-hour-gold py-2'>
