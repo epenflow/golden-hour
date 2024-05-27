@@ -4,8 +4,10 @@ import './globals.css';
 import { elegante } from './constants/fonts';
 import { BRIDE_BIODATA, GROOM_BIODATA } from './constants';
 const inter = Inter({ subsets: ['latin'] });
-
+import RV from './public/RV_04170.JPG';
 export const metadata: Metadata = {
+	metadataBase: new URL('https://golden-hour-nine.vercel.app/'),
+
 	title: `The Wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 	description: `Your are invited to the wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 	icons: {
@@ -13,14 +15,7 @@ export const metadata: Metadata = {
 			url: '/WEDDING ICON.svg',
 		},
 	},
-	metadataBase: new URL('https://golden-hour-nine.vercel.app/'),
-	alternates: {
-		canonical: '/',
-		languages: {
-			'en-US': '/en-US',
-			'de-DE': '/de-DE',
-		},
-	},
+
 	openGraph: {
 		title: `The Wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 		description: `You are invited to the wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
@@ -28,7 +23,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		images: [
 			{
-				url: 'RV_04170.JPG',
+				url: RV.src,
 				width: 800,
 				height: 600,
 			},
