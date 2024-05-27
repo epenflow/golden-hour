@@ -13,11 +13,6 @@ export const metadata: Metadata = {
 			url: '/WEDDING ICON.svg',
 		},
 	},
-	openGraph: {
-		images: '/RV_04170.JPG',
-		title: `${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
-		description: `The Wedding of ${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
-	},
 };
 
 export default function RootLayout({
@@ -27,6 +22,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
+			<head>
+				<meta
+					property='og:image'
+					content='/RV_04170.JPG'
+				/>
+				<meta
+					property='og:title'
+					content={`${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`}
+				/>
+			</head>
 			<body className={`${inter.className} ${elegante.variable}`}>
 				{children}
 			</body>
