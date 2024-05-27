@@ -1,9 +1,17 @@
 'use client';
 import React from 'react';
-type createContext = {};
-const createContexts = React.createContext<createContext>({});
+type createContext = {
+	isLoader: boolean;
+	setLoader: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const createContexts = React.createContext<createContext>({
+	isLoader: false,
+	setLoader: () => {},
+});
 const ContextProvider = ({ children }: { children: React.ReactNode }) => {
-	const values = {};
+	const [isLoader, setLoader] = React.useState<boolean>(false);
+
+	const values = { isLoader, setLoader };
 	return (
 		<createContexts.Provider value={values}>
 			{children}

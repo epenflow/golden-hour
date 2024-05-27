@@ -26,7 +26,7 @@ const ShowCounter = ({ value, type }: ShowCounter) => {
 const Countdown = () => {
 	const [days, hours, minutes, seconds] = useCountdown(`${PREPOSITION.date}`);
 	return (
-		<div className='flex flex-row border-[1px] border-solid border-golden-hour-gold p-2'>
+		<div className='flex flex-row border-[1px] border-solid border-golden-hour-gold p-2 z-30 bg-golden-hour-white'>
 			<ShowCounter
 				value={days}
 				type='days'

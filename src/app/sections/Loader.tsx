@@ -4,10 +4,11 @@ import { GROOM_BIODATA, BRIDE_BIODATA } from '../constants';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useContextsProvider } from '../utils/context/Context';
 const Loader = () => {
 	const search = useSearchParams();
 	const kepada = search.get('kepada');
-	const [isLoader, setLoader] = React.useState<boolean>(false);
+	const { isLoader, setLoader } = useContextsProvider();
 	function handleClick() {
 		setLoader((prev) => !prev);
 	}
